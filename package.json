@@ -1,0 +1,21 @@
+{
+  "name": "highwee",
+  "version": "1.0.0",
+  "repository": "https://github.com/janeczkojan/highwee.git",
+  "author": "Jan Janeczko <janeczko.jan@hotmail.com>",
+  "private": true,
+  "scripts": {
+    "lerna": "lerna",
+    "npm-run-all": "npm-run-all",
+    "prepare": "lerna run prepare",
+    "bootstrap": "lerna bootstrap",
+    "build": "npm-run-all bootstrap prepare bootstrap"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "lerna": "^3.0.0-rc.0",
+    "npm-run-all": "^4.1.3"
+  }
+}
